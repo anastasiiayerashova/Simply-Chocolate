@@ -2,13 +2,25 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-ul,
-ol {
+ul {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .title {
@@ -21,51 +33,20 @@ a {
   color: #111;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.header {
-}
-
-.header-navigation {
+.title-colored {
+  color: #fd9222;
 }
 
 .header-logo {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
 }
 
 .header-logo-italic {
   font-style: italic;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11111;
-  letter-spacing: -0.03em;
-  color: #111;
-}
-
-.header-logo-image {
-}
-
-.header-menu-list {
-}
-
-.header-menu-item {
 }
 
 .header-menu-link {
@@ -76,13 +57,10 @@ a {
   color: #111;
 }
 
-.header-social-list {
-}
-
-.header-social-item {
-}
-
-.header-social-link {
+.header-menu-link:hover,
+.header-menu-link:active,
+.header-menu-link:focus {
+  color: #fd9222;
 }
 
 .hero {
@@ -98,7 +76,6 @@ a {
 }
 
 .hero-btn {
-  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -121,6 +98,7 @@ a {
 .benefits {
   background-color: #1e1823;
 }
+
 .benefits-list {
 }
 
@@ -142,12 +120,7 @@ a {
 
 .taste {
 }
-
 .taste-title {
-}
-
-.title-colored {
-  color: #fd9222;
 }
 
 .taste-text {
@@ -172,35 +145,26 @@ a {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: #111;
 }
 
 .made {
 }
-
 .made-title {
-}
-
-.title {
 }
 
 .made-image {
 }
-
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111;
 }
-
 .made-list {
 }
-
 .made-item {
 }
-
 .made-item-text {
   font-size: 14px;
   line-height: 1.29;
@@ -214,18 +178,13 @@ a {
 .products-title {
 }
 
-.title {
-}
-
 .products-list {
 }
 
 .products-item {
 }
-
 .products-image {
 }
-
 .products-subtitle {
   font-weight: 600;
   font-size: 18px;
@@ -234,16 +193,116 @@ a {
   text-transform: uppercase;
   color: #111;
 }
-
 .products-item-description {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
 }
-
 .products-btn {
   font-weight: 600;
   font-size: 14px;
   color: #111;
+}
+
+.sellers {
+}
+.sellers-title {
+}
+
+.sellers-list {
+}
+.sellers-item {
+}
+.sellers-image {
+}
+.sellers-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.reviews {
+}
+.reviews-title {
+}
+
+.reviews-list {
+}
+.reviews-item {
+}
+.reviews-image {
+}
+.reviews-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+.reviews-item-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+}
+
+.footer {
+  background-color: #1e1823;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fff;
+}
+.footer-social-list {
+}
+.footer-social-item {
+}
+.footer-social-link {
+}
+.footer-address {
+  font-style: normal;
+}
+.footer-address-list {
+}
+.footer-address-item {
+}
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+.footer-navigation {
+}
+.footer-menu-list {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
 }
