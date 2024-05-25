@@ -426,7 +426,7 @@ img {
 }
 
 .reviews-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .reviews-list {
@@ -440,14 +440,25 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 
-  flex-basis: calc((100% - 56) / 3);
+  width: 360px;
+  height: 242px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background-color: #fff;
   margin-bottom: 50px;
+  margin-top: 50px;
+  position: relative;
 }
+
 .reviews-image {
   border-radius: 100%;
-  margin: 0 auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 162px;
 }
 .reviews-subtitle {
   font-weight: 600;
@@ -456,7 +467,7 @@ img {
   text-align: center;
   color: #111;
   padding-bottom: 24px;
-  margin-top: 18px;
+  margin-top: 50px;
 }
 .reviews-item-text {
   font-size: 14px;
@@ -479,6 +490,14 @@ img {
 
 .footer {
   background-color: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-container-text {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 54px;
 }
 .footer-title {
   font-weight: 500;
@@ -486,19 +505,40 @@ img {
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #ffffff;
+  width: 300px;
+  height: 68px;
+  flex-grow: 1;
 }
 
 .footer-subtitle {
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
+
   color: #fff;
+  padding-bottom: 14px;
+}
+
+.footer-socials-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 14px;
+  margin-right: 50px;
 }
 .footer-social-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
 }
 .footer-social-item {
 }
 .footer-social-link {
+}
+
+.footer-address-container {
 }
 .footer-address {
   font-style: normal;
@@ -513,10 +553,17 @@ img {
   letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
+  padding-bottom: 4px;
 }
 .footer-navigation {
+  display: flex;
 }
 .footer-menu-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+  flex-grow: 1;
 }
 .footer-menu-item {
 }
@@ -526,4 +573,38 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+}
+.email {
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 15px 121px 15px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  display: flex;
+}
+form {
+  display: flex;
+
+  margin-top: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.footer-button {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 17px 40px;
+  background-color: #fd9222;
+  padding: 17px 33px 18px 32px;
+  margin-top: 24px;
+  display: flex;
+  width: 137px;
+  height: 52px;
+  margin-left: 8px;
 }
