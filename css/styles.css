@@ -677,7 +677,6 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 14px;
   margin-right: 50px;
 }
 .footer-social-list {
@@ -685,7 +684,7 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 24px;
+  gap: 14px;
 }
 .footer-social-item {
 }
@@ -698,6 +697,9 @@ img {
   font-style: normal;
 }
 .footer-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .footer-address-item {
 }
@@ -711,6 +713,7 @@ img {
 }
 .footer-navigation {
   display: flex;
+  margin-top: 24px;
 }
 .footer-menu-list {
   display: flex;
@@ -738,18 +741,17 @@ img {
   color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
   display: flex;
+  max-height: 52px;
 }
 
 .footer-button {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  text-align: center;
   border-radius: 100px;
-  padding: 17px 40px;
+
   background-color: #fd9222;
-  padding: 17px 33px 18px 32px;
-  margin-top: 24px;
-  display: flex;
   width: 137px;
   height: 52px;
   margin-left: 8px;
@@ -854,6 +856,24 @@ img {
 }
 
 .email-icon {
+  stroke: #404040;
+  fill: none;
+  transition: stroke 250ms ease, fill 250ms ease;
+}
+
+.form-input:hover + .email-icon {
+  stroke: #fd9222;
+  fill: none;
+}
+
+.phone-icon {
+  stroke: #404040;
+  fill: none;
+  transition: stroke 250ms ease, fill 250ms ease;
+}
+
+.form-input:hover + .phone-icon {
+  stroke: #fd9222;
   fill: none;
 }
 
@@ -955,4 +975,15 @@ textarea::placeholder {
 .visually-hidden:checked + .checkbox-label > .icon-container {
   background-color: #fd9222;
   fill: #fff;
+}
+.footer-social-icon {
+  fill: none;
+  stroke: #fff;
+  transition: stroke 250ms ease, fill 250ms ease;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  fill: transparent;
+  stroke: #fd9222;
 }
