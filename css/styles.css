@@ -66,15 +66,14 @@ img {
 }
 
 .container {
-  width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 335px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 32px;
+  padding-top: 20px;
+  padding-bottom: 14px;
   background-color: #fff;
 }
 
@@ -278,11 +277,14 @@ img {
 
 .benefits {
   background-color: #1e1823;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 120px;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.benefits-container {
+  max-width: 335px;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .benefits-list {
@@ -343,20 +345,27 @@ img {
 }
 
 .taste {
-  padding-bottom: 120px;
+  margin-bottom: 80px;
+  padding: 0 20px;
 }
 
 .taste-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 486px;
+  max-width: 335px;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .taste-title {
-  padding-bottom: 28px;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 335px;
 }
 
 .taste-text {
@@ -372,14 +381,15 @@ img {
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px 24px;
+  gap: 20px;
 }
 
 .taste-item-white {
   border-radius: 15px;
-  padding: 28px 23px 36px 23px;
+  padding: 32px 49px 28px 28px;
   background-color: #fff;
   border: 1px solid #fd9222;
+  width: 100%;
 }
 
 .arrow-white-item {
@@ -390,38 +400,40 @@ img {
   stroke: #fd9222;
   fill: transparent;
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
 }
 
 .taste-item-black {
   border-radius: 15px;
-  padding: 28px 23px 36px 23px;
+  padding: 32px 49px 28px 28px;
   background-color: #1e1823;
   position: relative;
+  width: 100%;
 }
 
 .arrow-black-icon {
   stroke: #ffffff;
   fill: transparent;
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
 }
 
 .taste-item {
   background-color: #fd9222;
   position: relative;
   border-radius: 15px;
-  padding: 28px 23px 36px 23px;
+  padding: 32px 49px 28px 28px;
+  width: 100%;
 }
 
 .arrow-icon {
   stroke: white;
   fill: transparent;
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
 }
 
 .taste-image {
