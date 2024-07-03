@@ -1,6 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #eceded;
+  background-color: #fafafa;
 }
 
 ul,
@@ -74,7 +74,6 @@ img {
 .header {
   padding-top: 20px;
   padding-bottom: 14px;
-  background-color: #fff;
 }
 
 .header-container {
@@ -91,8 +90,8 @@ img {
 
 .header-logo {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
+  font-size: 14px;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   color: #111;
   display: flex;
@@ -169,21 +168,14 @@ img {
 
 .hero {
   padding-bottom: 80px;
-  background-color: #fff;
 }
 
 .hero-container {
   background-color: rgba(17, 17, 17, 0.6);
-  background-image: linear-gradient(
-      180deg,
-      rgba(17, 17, 17, 0.4) 0%,
-      rgba(17, 17, 17, 0.4) 100%
-    ),
-    url(../images/hero-bg-mob.jpg);
+  background-image: url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* padding: 380px 40px 40px; */
   padding: 395px 20px 20px 20px;
   border-radius: 30px;
 }
@@ -192,23 +184,17 @@ img {
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .hero-container {
-    background-image: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0.4) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
-      url(../images/hero-bg-mob-2x.jpg);
+    background-image: url(../images/hero-bg-mob-2x.jpg);
   }
 }
 
 .hero-title {
   font-weight: 500;
-  /* font-size: 28px; */
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-  max-width: 484px;
+  max-width: 295px;
   padding-bottom: 32px;
 }
 
@@ -277,12 +263,12 @@ img {
 
 .benefits {
   background-color: #1e1823;
-  padding: 0 20px;
   margin-bottom: 80px;
+  min-width: 375px;
 }
 
 .benefits-container {
-  max-width: 335px;
+  min-width: 335px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -293,12 +279,13 @@ img {
   /* padding: 0 18px; */
   /* gap: 88px; */
   gap: 20px;
+  max-width: 308px;
 }
 
 .benefits-item {
   /* flex-basis: calc((100% - 2 * 88px) / 3); */
   position: relative;
-  padding-right: 28px;
+  /* padding-right: 28px; */
 }
 
 .benefits-item:not(:last-child)::after {
@@ -338,6 +325,7 @@ img {
 }
 
 .benefits-item-text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
