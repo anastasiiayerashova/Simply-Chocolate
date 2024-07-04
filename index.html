@@ -73,9 +73,9 @@
             <div class="hero-buttons">
               <button type="button" class="hero-btn">Buy now</button>
               <a href="#made" class="hero-made-link">How it’s made</a>
-              <a href="" class="hero-scroll-link"
+              <a href="#footer" class="hero-scroll-link"
                 >scroll down
-                <svg class="hero-scroll-icon" width="14" height="8">
+                <svg class="hero-scroll-icon" width="16" height="16">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </a>
@@ -137,21 +137,26 @@
       <div class="taste-container">  
          
       <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title-colored">TASTE</span> SENSATION</h2>
-   
- 
       <ul class="taste-list">
       <li class="taste-item">
+        <div class="taste-item-orange-wrap">  
         <svg class="arrow-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
-        <img
-              src="./images/taste-img-1.png"
+        <picture>
+          <source srcset="./images/taste-img-1@1x.png 1x, ./images/taste-img-1@2x.png 2x" media="(max-width: 704px)">
+             <source srcset="./images/taste-img-1-desk@1x.png 1x, ./images/taste-img-1-desk@2x.png 2x" media="(min-width: 705px)">
+      <img
+              src="./images/taste-img-1@1x.png"
               alt="MILK CHOCOLATE"
-              width="214"
-              height="160" class="taste-image"
+              width="236"
+              height="176" class="taste-image"
             />
+        </picture>
+       
             
             <h3 class="taste-subtitle-white">MILK CHOCOLATE</h3>
+        </div>
           </li>
       <li class="taste-item-white arrow-white-item">
        <svg class="arrow-icon-white" width="24" height="24">
@@ -160,8 +165,8 @@
         <img
               src="./images/taste-img-2.png"
               alt="MILK"
-              width="214"
-              height="160" class="taste-image"
+              width="236"
+              height="176" class="taste-image"
             />
             <h3 class="taste-subtitle">MILK</h3>
       </li>
@@ -172,8 +177,8 @@
          <img
               src="./images/taste-img-3.png"
               alt="NUTS"
-              width="214"
-              height="160" class="taste-image"
+              width="236"
+              height="176" class="taste-image"
             />
             <h3 class="taste-subtitle-white">NUTS</h3>
       </li>
@@ -184,35 +189,37 @@
             <img
               src="./images/taste-img-4.png"
               alt="SEMI - SWEET CHOCOLATE"
-              width="214"
-              height="160" class="taste-image"
+              width="236"
+              height="176" class="taste-image"
             />
             <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
           </li>
           <li class="taste-item">
+            <div class="taste-item-orange-wrap">  
            <svg class="arrow-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
             <img
               src="./images/taste-img-5.png"
               alt="CACAO"
-              width="214"
-              height="160" class="taste-image"
+              width="236"
+              height="176" class="taste-image"
             />
             <h3 class="taste-subtitle-white">CACAO</h3>
+            </div>
           </li>
           <li class="taste-item-white arrow-white-item">  
            <svg class="arrow-icon-white" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
-            <img src="./images/taste-img-6.png" alt="RASPBERRY" width="214" height="160" class="taste-image" />
+            <img src="./images/taste-img-6.png" alt="RASPBERRY" width="236" height="176" class="taste-image" />
             <h3 class="taste-subtitle">RASPBERRY</h3>
           </li>
           <li class="taste-item-black">
            <svg class="arrow-black-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
-            <img src="./images/taste-img-7.png" alt="COCONUT OIL" width="214" height="160" class="taste-image" />
+            <img src="./images/taste-img-7.png" alt="COCONUT OIL" width="236" height="176" class="taste-image" />
             <h3 class="taste-subtitle-white">COCONUT OIL</h3>
           </li>
         </ul>
@@ -225,13 +232,18 @@
             HOW IT'S <span class="title-colored">MADE?</span>
           </h2>
           <div class="made-container">
+            <picture> 
+              <source srcset="./images/made-img-desk@1x.png 1x, ./images/made-img-desk@2x.png 2x" media="(min-width: 1199px)">
+              <source srcset="./images/made-img-tab@1x.png 1x, ./images/made-img-tab@2x.png 2x" media="(min-width: 768px)">
+              <source srcset="./images/made-img-mob@1x.png 1x, ./images/made-img-mob@2x.png 2x" media="(max-width: 767px)">
             <img
-              src="./images/made-img.jpeg"
+              src="./images/made-img-desk@1x.png"
               alt="liquid chocolate"
               width="600"
               height="400"
               class="made-image"
             />
+            </picture>
             <div class="made-text-container">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -239,34 +251,24 @@
               </h3>
               <ul class="made-list">
                 <li class="made-item">
-                  <p class="made-item-text">
                     Heat the milk in a saucepan without bringing it to a boil.
                     Add sugar and cocoa powder.
-                  </p>
                 </li>
                 <li class="made-item">
-                  <p class="made-item-text">
                     At the same time, prepare a water bath. Melt the butter on
                     it.
-                  </p>
                 </li>
                 <li class="made-item">
-                  <p class="made-item-text">
                     "Mix" the milk mixture and already liquid butter. Mix
                     thoroughly with a silicone spatula so that the mass becomes
                     uniform and silky.
-                  </p>
                 </li>
                 <li class="made-item">
-                  <p class="made-item-text">
                     Heat the mixture over low heat, letting it barely boil.
-                  </p>
                 </li>
                 <li class="made-item">
-                  <p class="made-item-text">
                     Pour the chocolate into special containers (can be replaced
                     with ice molds). Allow to cool and harden.
-                  </p>
                 </li>
               </ul>
             </div>
