@@ -135,11 +135,10 @@
       </section>
       <section class="taste">
       <div class="taste-container">  
-         
       <h2 class="taste-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title-colored">TASTE</span> SENSATION</h2>
       <ul class="taste-list">
       <li class="taste-item">
-        <div class="taste-item-orange-wrap">  
+        <div class="orange-wrap">  
         <svg class="arrow-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
@@ -153,12 +152,11 @@
               height="176" class="taste-image"
             />
         </picture>
-       
-            
             <h3 class="taste-subtitle-white">MILK CHOCOLATE</h3>
         </div>
           </li>
-      <li class="taste-item-white arrow-white-item">
+      <li class="taste-item">
+        <div class="white-wrap">  
        <svg class="arrow-icon-white" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
@@ -169,8 +167,10 @@
               height="176" class="taste-image"
             />
             <h3 class="taste-subtitle">MILK</h3>
+        </div>
       </li>
-      <li class="taste-item-black">
+      <li class="taste-item">
+        <div class="black-wrap">  
       <svg class="arrow-black-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
@@ -181,8 +181,10 @@
               height="176" class="taste-image"
             />
             <h3 class="taste-subtitle-white">NUTS</h3>
+        </div>
       </li>
-      <li class="taste-item-white arrow-white-item">
+      <li class="taste-item">
+        <div class="white-wrap">  
        <svg class="arrow-icon-white" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
@@ -193,9 +195,10 @@
               height="176" class="taste-image"
             />
             <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
+        </div>
           </li>
           <li class="taste-item">
-            <div class="taste-item-orange-wrap">  
+            <div class="orange-wrap">  
            <svg class="arrow-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
@@ -208,22 +211,25 @@
             <h3 class="taste-subtitle-white">CACAO</h3>
             </div>
           </li>
-          <li class="taste-item-white arrow-white-item">  
+          <li class="taste-item">  
+            <div class="white-wrap"> 
            <svg class="arrow-icon-white" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
             <img src="./images/taste-img-6.png" alt="RASPBERRY" width="236" height="176" class="taste-image" />
             <h3 class="taste-subtitle">RASPBERRY</h3>
+            </div>
           </li>
-          <li class="taste-item-black">
+          <li class="taste-item">
+            <div class="black-wrap">  
            <svg class="arrow-black-icon" width="24" height="24">
           <use href="./images/icons.svg#arrow"></use>
         </svg>
             <img src="./images/taste-img-7.png" alt="COCONUT OIL" width="236" height="176" class="taste-image" />
             <h3 class="taste-subtitle-white">COCONUT OIL</h3>
+            </div>
           </li>
         </ul>
-
         </div>
     </section> 
       <section id="made" class="made">
@@ -388,51 +394,70 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="sellers">
+      <section class="sellers">
   <div class="container">  
   <h2 class="sellers-title title"><span class="title-colored">Top</span> sellers</h2>
   <ul class="sellers-list">
           <li class="sellers-item"> 
-            <div class="sellers-cover-wrap">  
-            <img
-              src="./images/sellers-img-1.jpeg"
+             <div class="sellers-cover-wrap">  
+              <picture>
+                <source srcset="./images/sellers-1-desk@1x.png 1x, ./images/sellers-1-desk@2x.png 2x" media="(min-width: 1136px)">
+              <source srcset="./images/sellers-1-tab@1x.png 1x, ./images/sellers-1-tab@2x.png 2x" media="(min-width: 704px)">
+              <source srcset="./images/sellers-1-mob@1x.png 1x, ./images/sellers-1-mob@2x.png 2x" media="(min-width: 335px)">
+         <img
+              src="./images/sellers-1-desk@1x.png"
               width="368"
               height="464"
               alt="CHOCOLATE WITH NUTS" class="sellers-image"
             />
+            </picture>
+             </div>
+            
               <p class="overlay">
                Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.
-              </p>
-            </div>
+            </p>
+          
+          
             <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
           </li>
-          <li class="sellers-item">
+          <li class="sellers-item sellers-item-hidden-mob">
             <div class="sellers-cover-wrap">
-            <img
-              src="./images/sellers-img-2.jpeg"
+              <picture>
+                <source srcset="./images/sellers-2-desk@1x.png 1x, ./images/sellers-2-desk@2x.png 2x" media="(min-width: 1136px)">
+              <source srcset="./images/sellers-2-tab@1x.png 1x, ./images/sellers-2-tab@2x.png 2x" media="(min-width: 704px)">
+           <img
+              src="./images/sellers-2-desk@1x.png"
               width="368"
               height="464"
               alt="CHOCOLATE WITH FRUITS" class="sellers-image"
             />
+            </picture>
+
+           <div class="sellers-modal-overlay">  
             <p class="overlay">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
-            </div>
+           </div>
+          </div>
             <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
           </li>
-          <li class="sellers-item">
+          <li class="sellers-item sellers-item-hidden-tab">
             <div class="sellers-cover-wrap">
-            <img
-              src="./images/sellers-img-3.jpeg"
+              <picture>
+                <source srcset="./images/sellers-3-desk@1x.png 1x, ./images/sellers-3-desk@2x.png 2x" media="(min-width: 1136px)">
+        <img
+              src="./images/sellers-3-desk@1x.png"
               width="368"
               height="464"
               alt="DARK CHOCOLATE" class="sellers-image"
             />
+              </picture>
+            
             <p class="overlay">Dark chocolate is a rich and indulgent treat that is beloved by many chocolate enthusiasts. It is made from cocoa beans, which are roasted, ground, and then processed to produce chocolate liquor. Dark chocolate contains a higher percentage of cocoa solids compared to milk chocolate.</p>
             </div>
             <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
           </li>
         </ul>
   </div>
-      </section> -->
+      </section> 
       <section class="reviews">
         <div class="container">  
         <h2 class="reviews-title title"><span class="title-colored">chocolate</span> is loved</h2>
@@ -450,7 +475,7 @@
               wafer, covered in a thin layer chocolate.
             </p>
           </li>
-          <li class="reviews-item">
+          <li class="reviews-item reviews-item-tab">
             <img
               src="./images/loved-img-2.jpeg"
               width="80"
@@ -483,7 +508,7 @@
         </div>
       </section> 
     </main>
-    <!-- <footer class="footer">
+     <footer class="footer">
       <div class="container">
         <div class="footer-container-text">    
       <p class="footer-title"><span class="title-colored">Chocolate</span> a delicious cure for a bad day</p>
@@ -563,7 +588,7 @@
       </nav>
       
       </div>
-    </footer> -->
+    </footer> 
     <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="close-btn">
